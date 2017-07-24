@@ -1,4 +1,9 @@
 header {
+
+  *{
+    @extend .transition;
+  }
+
   position: fixed;
   top: 0;
   right: 0;
@@ -51,9 +56,10 @@ header {
       margin-top: 18px;
       width: 45%;
       float: right;
-      text-align: justify;
+      text-align: right;
       li {
-        display: inline-block;
+        display: inline-table;
+        padding-left: 24px;
         a {
           font-size: 1rem;
           display: block;
@@ -74,6 +80,11 @@ header {
 
   @media only screen and (max-width: 992px){
 
+    img{
+      width: 80px;
+      margin: 3px 0 0 16px;
+    }
+
     input:checked ~ .menu-control {
       -webkit-transform: translate(-250px, 0);
       transform: translate(-250px, 0);
@@ -85,12 +96,12 @@ header {
 
     .menu-control {
       position: absolute;
-      right: 25px;
-      top: 25px;
+      right: 16px;
+      top: 13px;
       display: block;
       width: 30px;
       padding: 5px 0;
-      border: solid #fff;
+      border: solid #000;
       border-width: 3px 0;
       z-index: 3;
       cursor: pointer;
@@ -104,7 +115,7 @@ header {
       content: "";
       display: block;
       height: 3px;
-      background: #fff;
+      background: #000;
     }
 
     .menu-control-close {
@@ -125,7 +136,7 @@ header {
       right: 0;
       bottom: 0;
       width: 250px;
-      background: #cddc39;
+      background: #f6f1e8;
       z-index: 3;
       transition: all 0.5s ease-in-out;
       -webkit-transform: translate(100%, 0);
