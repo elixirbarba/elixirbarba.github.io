@@ -1,0 +1,19 @@
+section.welcome{
+  background: url(/images/welcome.jpg) top center / cover fixed;
+  background-position-y: 48px;
+  overflow: hidden;
+  height: 100%;
+
+  .pattern{
+    background-image: url(/images/pattern.png);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position: 0 0;
+  }
+}

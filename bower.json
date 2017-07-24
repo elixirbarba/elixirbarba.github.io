@@ -1,0 +1,12 @@
+{
+  "name": "frontinvale-github-io",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.1",
+    "rellax": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
