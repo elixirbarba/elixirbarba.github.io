@@ -17,7 +17,7 @@ var frontinvale = function() {
 
     var header = document.getElementById('header');
 
-    document.addEventListener("scroll", function(){
+    document.addEventListener('scroll', function(){
       if(document.body.scrollTop>80){
         header.classList.add('small')
       } else{

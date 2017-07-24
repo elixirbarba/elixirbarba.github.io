@@ -7,6 +7,7 @@ const runSequence = require('run-sequence');
 const fs = require('fs');
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+const ghPages = require('gulp-gh-pages');
 
 var dev = true;
 
