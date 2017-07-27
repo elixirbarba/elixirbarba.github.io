@@ -1,15 +1,19 @@
 section.welcome{
-  background: url(/images/pattern.png), url(/images/welcome.jpg) top center / cover fixed;
-  background-position-y: 48px;
-  overflow: hidden;
   height: 100%;
+  
+  .background{
+    background: url(/images/pattern.png), url(/images/welcome.jpg) top center / cover fixed;
+    background-position-y: 48px;
+    overflow: hidden;
+  }
 
   .title{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    position: fixed;
+    width: 100%;
     h1{
       font-size: 3rem;
       color: white;
